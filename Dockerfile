@@ -3,9 +3,7 @@
 #
 # https://github.com/dockerfile/nodejs
 #
-
-# Pull base image.
-FROM ubuntu:14.04
+ 
 
 # Install Node.js
 FROM buildpack-deps:jessie

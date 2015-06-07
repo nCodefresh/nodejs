@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM dockerfile/python
+FROM ubuntu:14.04
 
 # Install Node.js
 RUN \

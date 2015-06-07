@@ -35,4 +35,4 @@ ENV PORT 9000
 EXPOSE 9000
 
 # Define default command.
-CMD ["node", "/bin/www"]
+CMD ["node", "./bin/www"]

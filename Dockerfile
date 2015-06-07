@@ -27,7 +27,7 @@ RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x
 	&& npm install -g npm@"$NPM_VERSION" \
 	&& npm cache clear
 
-RUN mkdr src && express
+RUN mkdir src && express
 WORKDIR /src
 RUN npm install -g  express-generator
 RUN npm install

@@ -22,8 +22,13 @@ RUN \
   npm install -g npm && \
   printf '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 
+RUN mkdr src && express
+WORKDIR /src
+RUN npm install -g  express-generator
+RUN npm install
+
 # Define working directory.
-WORKDIR /data
+ENV PORT 9000 
 
 # Define default command.
-CMD ["bash"]
+CMD ["node", "/bin/www/express"]

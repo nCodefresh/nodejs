@@ -31,7 +31,8 @@ RUN express
 RUN npm install
 
 # Define working directory.
-ENV PORT 9000 
+ENV PORT 8888
+EXPORT 8888
 
 # Define default command.
 CMD ["node", "/bin/www/express"]
